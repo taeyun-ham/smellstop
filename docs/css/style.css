@@ -87,7 +87,6 @@ img {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--secondary);
@@ -299,6 +298,10 @@ img {
   background: var(--primary);
   border-radius: 2px;
   margin-top: 12px;
+}
+
+.section-title .highlight-text {
+  color: var(--primary);
 }
 
 .section-subtitle {
