@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 프로젝트 개요
 
-**냄새는 못 참지** — 100% 천연 탈취제를 제공하는 B2B 악취제거 전문기업의 공식 웹사이트입니다.
+**냄새는 못참지** — 100% 천연 탈취제를 제공하는 B2B 악취제거 전문기업의 공식 웹사이트입니다.
 
 - **기술 스택**: 순수 HTML, CSS, JavaScript (바닐라 JS, 프레임워크 무)
 - **배포**: 정적 파일 호스팅 (HTML/CSS/JS 기반)
