@@ -44,6 +44,64 @@
           font-size: 1.4rem !important;
         }
       }
+
+      /* EPA Safer Choice 테이블 및 이미지 반응형 */
+      .epa-safer-choice-layout {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .epa-table-wrapper {
+        flex: 1;
+        overflow-x: auto;
+      }
+
+      .epa-image-wrapper {
+        flex: 0 0 auto;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 768px) {
+        .epa-safer-choice-layout {
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .epa-table-wrapper {
+          flex: 1;
+          overflow-x: auto;
+        }
+
+        .epa-table-wrapper table {
+          table-layout: fixed;
+          font-size: 0.75rem;
+        }
+
+        .epa-table-wrapper table th,
+        .epa-table-wrapper table td {
+          padding: 8px 4px !important;
+          word-break: break-word;
+        }
+
+        .epa-table-wrapper table thead th {
+          font-size: 0.7rem;
+        }
+
+        .epa-image-wrapper {
+          flex: 1;
+          width: 100%;
+          justify-content: center;
+        }
+
+        .epa-image-wrapper img {
+          max-width: 200px;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -76,6 +134,41 @@
           </div>
           <div class="nav-item">
             <a href="products.html" class="nav-link">제품소개</a>
+          </div>
+          <!-- 로고 섹션 -->
+          <div class="nav-logos">
+            <a
+              href="https://omi-industries.com/about-omi"
+              target="_blank"
+              class="logo-link"
+              title="OMI"
+            >
+              <img src="images/logo-omi.png" alt="OMI" />
+            </a>
+            <a
+              href="https://ecosorbindustrial.com"
+              target="_blank"
+              class="logo-link"
+              title="Ecosorb"
+            >
+              <img src="images/logo-ecosorb.png" alt="Ecosorb" />
+            </a>
+            <a
+              href="https://freshwaveiaq.com/about/"
+              target="_blank"
+              class="logo-link"
+              title="FreshWave"
+            >
+              <img src="images/logo-freshwave.svg" alt="FreshWave" />
+            </a>
+            <a
+              href="https://freshproducts.com/about-us/"
+              target="_blank"
+              class="logo-link"
+              title="Fresh"
+            >
+              <img src="images/logo-fresh.png" alt="Fresh" />
+            </a>
           </div>
         </nav>
         <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
@@ -315,6 +408,205 @@
             <a href="products.html" class="btn btn-primary">
               <i class="fas fa-flask"></i> 제품 자세히 보기
             </a>
+
+            <div
+              style="
+                margin-top: 48px;
+                padding-top: 32px;
+                border-top: 1px solid var(--border);
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--secondary);
+                  margin-bottom: 20px;
+                "
+              >
+                미국 EPA(환경보호국)에 'Safer Choice' 로 등록된 OMI 제품 현황
+              </h3>
+
+              <div class="epa-safer-choice-layout">
+                <div class="epa-table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th style="width: 35%">Product Name (제품명)</th>
+                        <th style="width: 20%">Company (회사)</th>
+                        <th style="width: 15%">Sector (분야)</th>
+                        <th style="width: 30%">Type (종류)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20IAQ%20Air%20and%20Surface%20Spray"
+                            target="_blank"
+                            >Fresh Wave IAQ Air and Surface Spray
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Business</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20IAQ%20Gel"
+                            target="_blank"
+                            >Fresh Wave IAQ Gel
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Business</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20IAQ%20Air%20and%20Surface%20Spray"
+                            target="_blank"
+                            >Fresh Wave IAQ Air and Surface Spray
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20IAQ%20Gel"
+                            target="_blank"
+                            >Fresh Wave IAQ Gel
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Laundry%20Odor%20Eliminator"
+                            target="_blank"
+                            >Fresh Wave Laundry Odor Eliminator
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Lavender%20Odor%20Removing%20Gel"
+                            target="_blank"
+                            >Fresh Wave Lavender Odor Removing Gel
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Lavender%20Odor%20Removing%20Spray"
+                            target="_blank"
+                            >Fresh Wave Lavender Odor Removing Spray
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Lemon%20Odor%20Removing%20Gel"
+                            target="_blank"
+                            >Fresh Wave Lemon Odor Removing Gel
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Lemon%20Odor%20Removing%20Spray"
+                            target="_blank"
+                            >Fresh Wave Lemon Odor Removing Spray</a
+                          >
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Odor%20Removing%20Gel"
+                            target="_blank"
+                            >Fresh Wave Odor Removing Gel
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Odor%20Removing%20Litter%20Box%20Gel"
+                            target="_blank"
+                            >Fresh Wave Odor Removing Litter Box Gel
+                          </a>
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Odor%20Removing%20Pet%20Spray%20Orange"
+                            target="_blank"
+                            >Fresh Wave Odor Removing Pet Spray Orange</a
+                          >
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.epa.gov/saferchoice/products#search=Fresh%20Wave%20Odor%20Removing%20Spray"
+                            target="_blank"
+                            >Fresh Wave Odor Removing Spray</a
+                          >
+                        </td>
+                        <td>OMI Industries</td>
+                        <td>Home</td>
+                        <td>Odor Removers</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="epa-image-wrapper">
+                  <img
+                    src="images/saferchoice.png"
+                    alt="EPA Safer Choice"
+                    style="max-width: 100%; height: auto"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -492,13 +784,13 @@
     <!-- ===== 5. 초기 투자 비용과 예상 수익 ===== -->
     <section class="content-section">
       <div class="container">
-        <div class="section-title">초기 투자 비용과 예상 수익</div>
+        <div class="section-title">초기 투자 비용</div>
         <p class="section-subtitle">
           낮은 초기 비용으로 시작할 수 있는 블루오션 사업입니다
         </p>
 
         <div class="investment-section">
-          <h3>초기 투자 비용과 예상 수익</h3>
+          <h3>대리점 가입시 초기투자비</h3>
           <div style="overflow-x: auto">
             <table class="data-table">
               <thead>
@@ -517,12 +809,8 @@
                   <td>없음 (용도에 맞는 장비 추천 후 각자 구입)</td>
                 </tr>
                 <tr>
-                  <td>샘플 구입 비용</td>
-                  <td>50 ~ 100 (천연 탈취제, 화장실 탈취 제품 구입)</td>
-                </tr>
-                <tr>
                   <td>초도 물량 (수입)</td>
-                  <td><strong>500</strong> (제품 수입)</td>
+                  <td><strong>300</strong> (제품 수입)</td>
                 </tr>
                 <tr>
                   <td>마케팅 비용 (선택)</td>

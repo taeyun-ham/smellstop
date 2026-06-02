@@ -116,6 +116,38 @@ img {
   gap: 4px;
 }
 
+/* 로고 섹션 */
+.nav-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  transition: all var(--transition);
+}
+
+.logo-link:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.logo-link img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+}
+
 .nav-item {
   position: relative;
 }
@@ -1371,6 +1403,16 @@ img {
   }
   .nav-item.open .dropdown-menu {
     display: block;
+  }
+  .nav-logos {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    width: 100%;
+    justify-content: flex-start;
   }
   .hero-content h1 {
     font-size: 2.2rem;
